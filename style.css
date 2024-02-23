@@ -1,10 +1,12 @@
 *{
+  /* Define margem, preenchimento e modelo de caixa para todos os elementos */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .container{
+     /* Configurações do container principal */
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(135deg, lightblue, grey);
@@ -13,6 +15,7 @@
 }
 
 .todo-app{
+    /* Estilização da aplicação de lista de tarefas */
     width: 100%;
     max-width: 540px;
     background: #0e6a81;
@@ -22,6 +25,7 @@
 }
 
 .todo-app h2{
+    /* Estilo do título da aplicação com imagem de checklist */
     color: #ffffffe5;
     display: flex;
     align-items: center;
@@ -31,11 +35,13 @@
 }
 
 .todo-app h2 img{
+    /* Estilo da imagem ao lado do título */
     width: 30px;
     margin-left: 10px;
 }
 
 .row{
+     /* Estilo da linha contendo a caixa de texto e botão de adicionar */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +52,7 @@
 }
 
 input{
+    /* Estilo da caixa de entrada de texto */
     flex: 1;
     border: none;
     outline: none;
@@ -55,6 +62,7 @@ input{
 }
 
 button{
+    /* Estilo do botão de adicionar */
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -66,6 +74,7 @@ button{
 }
 
 ul li{
+    /* Estilo dos itens da lista */
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -76,6 +85,7 @@ ul li{
 }
 
 ul li::before{
+    /* Elemento visual antes de cada item da lista */
     content: "";
     position: absolute;
     height: 28px;
@@ -89,15 +99,18 @@ ul li::before{
 }
 
 ul li.checked{
+    /* Estilo para itens marcados como concluídos */
     color: #95c2bad2;
     text-decoration: line-through;
 }
 
 ul li.checked::before{
+    /* Alteração do elemento visual para itens marcados como concluídos */
     background-image:url(imagens/checklist.png) ;
 }
 
 ul li span{
+    /* Estilo para o ícone de exclusão à direita de cada item */
     position: absolute;
     right: 0;
     top: 5px;
@@ -111,5 +124,6 @@ ul li span{
 }
 
 ul li span:hover{
+    /* Efeito de destaque ao passar o mouse sobre o ícone de exclusão */
     background: #eb3b3bcc;
 }
