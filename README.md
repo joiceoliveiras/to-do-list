@@ -1,8 +1,7 @@
 # To Do List
 ---
-
 <p align="center" >
-     <video src="sitetodolst.mp4" controls title="Title"></video>
+     <img width="600" heigth="600" src="">
 </p>
 Visite o site: https://joiceoliveiras.github.io/to-do-list/
 
